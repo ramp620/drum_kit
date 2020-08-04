@@ -1,0 +1,44 @@
+--Listens when to execute a function
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+for (var i = 0; i < numberOfDrumButtons; i++) {
+
+document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  alert ("I got clicked");
+});
+
+}
+--------------------------------------------------------------------------
+-- More simple for one item
+$0.addEventListener("click", function(){
+console.log("I got clicked");
+});
+--------------------------------------------------------------------------
+-- Play audio basic
+var audio = new Audio('sounds/tom-1.mp3');
+audio.play();
+---------------------------------------------------------------------------
+--Change color of text when clicked.
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+for (var i = 0; i < numberOfDrumButtons; i++) {
+
+document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  this.style.color = "white";
+  --------------------------------------------------------------------------
+  --create object
+  var houseKeeper1 = {
+    Name: "Maria",
+    Age: 45,
+    hasWorkPermit: true,
+    Language: ["English",  "Spanish"]
+
+}
+------------------------------------------------------------------------------
+ --Use constructor Function if alot, first letter of function needs to be capital
+function BellBoy (name,age, hasWorkPermit, languages) {
+this.name = name;
+this.age = age;
+this.hasWorkpermit = hasWorkpermit;
+this.languages = languages;
+}
+
+var bellBoy1 = new BellBoy ("Timmy", 19, true, ["French", "English"]);
